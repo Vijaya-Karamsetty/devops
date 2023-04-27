@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  tasks:
+    - name: Loop and print names of Atlassian Squad
+      debug:
+        msg: " {{ item }}"
+      loop:
+        - CH
+        - Tamil
+        - Megha
+        - Navya
+        - MN

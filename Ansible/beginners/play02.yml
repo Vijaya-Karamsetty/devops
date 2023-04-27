@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  vars:
+    - username: karamsetty
+    - home: /mnt/c/Users/vijay/ansible  
+  tasks:
+    - name: print variables
+      debug:
+        msg: "Username: {{ username }}, Home dir: {{ home }}"

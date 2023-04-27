@@ -1,0 +1,24 @@
+:/mnt/c/Users/vijay/ansible$ ansible localhost -i inventory -m setup -a "filter=*ipv4*" -u yxyxy
+[WARNING]: Unable to parse /mnt/c/Users/vijay/ansible/inventory as an inventory source
+[WARNING]: No inventory was parsed, only implicit localhost is available
+localhost | SUCCESS => {
+    "ansible_facts": {
+        "ansible_all_ipv4_addresses": [
+          
+        ],
+        "ansible_default_ipv4": {
+            "address": "",
+            "alias": "eth0",
+            "broadcast": "",
+            "gateway": "",
+            "interface": "eth0",
+            "macaddress": "",
+            "mtu": 1500,
+            "netmask": "",
+            "network": "",
+            "type": "ether"
+        }
+    },
+    "changed": false
+}
+:/mnt/c/Users/vijay/ansible$

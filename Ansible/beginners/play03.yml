@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  tasks:
+    - name: print facts {uses only the last msg only}
+      debug:
+        msg: "IPv4 address: {{ ansible_default_ipv4.address }}"
+        msg: "IPv4 alias: {{ansible_default_ipv4.alias}}"
